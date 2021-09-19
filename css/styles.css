@@ -19,3 +19,9 @@ li a {
 li a:hover {
     background-color: rgb(2, 92, 65);
 }
+body {
+    background-image: url(../images/pizz2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
