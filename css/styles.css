@@ -61,3 +61,17 @@ body {
     width: 30%;
     padding: 2px;
 }
+.col-md-4{
+    border-radius: 10%;
+    padding: 10px;
+}
+.controls-top h2{
+    text-align: center;
+}
+#PizzaPricing {
+    padding-top: 30px;
+}
+#pizzaPricing {
+    background-color: beige;
+    border:3px solid black;
+}
