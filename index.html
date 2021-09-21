@@ -123,7 +123,7 @@
         <br>
         
     </div>
-    <div class="container-fluid" id="makeOrder">
+    <div class="Container text-center" id="makeOrder">
         <div class="order-overlay">
             <div class="controls-top text-center" id="Order-now">
                 <h2>Order Here</h2>
@@ -133,25 +133,56 @@
             <div class="col-sm-5">
                 <form action="">
                     <label for="select">Select Flavor</label>
-                    <select class="Flavor" required>
-                        <option value="Cheese Pizza">Cheese Pizza</option>
-                        <option value="Veggie Pizza">Veggie Pizza</option>
-                        <option value="Pepperoni Pizza">Pepporoni Pizza</option>
-                        <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
-                        <option value="Hawaiian Pizza">Hawaiian Pizza</option>
-                        <option value="Spicy Sausage Pizza">Spicy Sausage Pizza</option>
+                    <select class="flavor" required>
+                        <option selected value="0">Select Flavor here</option>
+                        <option label="Cheese Pizza" value="800" >Cheese Pizza</option>
+                        <option label="Veggie Pizza" value="700">Veggie Pizza</option>
+                        <option label="Pepperoni Pizza" value="700" >Pepporoni Pizza</option>
+                        <option label="BBQ Chicken Pizza" value="800" >BBQ Chicken Pizza</option>
+                        <option label="Hawaiian Pizza" value="800" >Hawaiian Pizza</option>
+                        <option label="Spicy Sausage Pizza" value="800" >Spicy Sausage Pizza</option>
                     </select>
                     <br>
+                    <br>
 
-                    <label>Pizza Size</label><br>
+                    <label for="Size">Pizza Size</label>
                     <select class="sizes" id="size" required>
+                        <option selected value="0">Select size here</option>
                         <option label="Small" value="350">Small</option>
                         <option label="Medium" value="700">Medium</option>
                         <option label="Large" value="1400">Large</option>
                     </select>
                     <br>
+                    <br>
 
+                    <label for="Crust" >Choose Crust</label>
+                    <select class="crust" id="crust" required>
+                        <option selected value="0">Choose Crust</option>
+                        <option label="Stuffed Crust" value="200" >Stuffed Crust</option>
+                        <option label="Thin Crust" value="150" >Thin Crust</option>
+                        <option label="Gluten Free" value="300" >Gluten Free</option>
+                        <option label="Cheese Filled Crust" value="400" >Cheese Filled Crust</option>
+                    </select>
+                    <br>
+                    <br>
 
+                    <label for="Topping" >Choose Topping</label>
+                    <select class="Flavor" required>
+                        <option selected value="0">Choose Topping</option>
+                        <option label="onion" value="150">Onion</option>
+                        <option label="Mushroom" value="200">Mushroom</option>
+                        <option label="Pepperoni" value="700" >Pepperoni</option>
+                    </select>
+                    <br>
+                    <br>
+                    
+                    <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+                    <input type="number" id="amount" placeholder="Number of pizzas"required>
+                </form>
+            </div>
+        </div>
+                    
+        
     </div>
     <script src="js/app.js"></script>
 </body>
