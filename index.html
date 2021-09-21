@@ -133,7 +133,7 @@
             <div class="col-sm-5">
                 <form action="">
                     <label for="select">Select Flavor</label>
-                    <select class="flavor" required>
+                    <select class="custom-select custom-select-md mb-3 flavor" required>
                         <option selected value="0">Select Flavor here</option>
                         <option label="Cheese Pizza" value="800" >Cheese Pizza</option>
                         <option label="Veggie Pizza" value="700">Veggie Pizza</option>
@@ -145,39 +145,38 @@
                     <br>
                     <br>
 
-                    <label for="Size">Pizza Size</label>
-                    <select class="sizes" id="size" required>
+                    <label for="size">Pizza Size</label>
+                    <select class="custom-select custom-select-md mb-3 size" id="size" required>
                         <option selected value="0">Select size here</option>
-                        <option label="Small" value="350">Small</option>
-                        <option label="Medium" value="700">Medium</option>
-                        <option label="Large" value="1400">Large</option>
+                        <option label="Small...kshs.350" value="350">Small</option>
+                        <option label="Medium...kshs.700" value="700">Medium</option>
+                        <option label="Large...kshs.1400" value="1400">Large</option>
                     </select>
                     <br>
                     <br>
 
                     <label for="Crust" >Choose Crust</label>
-                    <select class="crust" id="crust" required>
+                    <select class="custom-select custom-select-md mb-3 crust" id="crust" required>
                         <option selected value="0">Choose Crust</option>
-                        <option label="Stuffed Crust" value="200" >Stuffed Crust</option>
-                        <option label="Thin Crust" value="150" >Thin Crust</option>
-                        <option label="Gluten Free" value="300" >Gluten Free</option>
-                        <option label="Cheese Filled Crust" value="400" >Cheese Filled Crust</option>
+                        <option label="Stuffed Crust...kshs.200" value="200" >Stuffed Crust</option>
+                        <option label="Thin Crust...kshs.150" value="150" >Thin Crust</option>
+                        <option label="Gluten Free...kshs.300" value="300" >Gluten Free</option>
+                        <option label="Cheese Filled Crust...kshs.400" value="400" >Cheese Filled Crust</option>
                     </select>
                     <br>
                     <br>
 
                     <label for="Topping" >Choose Topping</label>
-                    <select class="Flavor" required>
+                    <select class="custom-select custom-select-md mb-3 Flavor" required>
                         <option selected value="0">Choose Topping</option>
-                        <option label="onion" value="100">Onion</option>
-                        <option label="Mushroom" value="100">Mushroom</option>
-                        <option label="Pepperoni" value="100" >Pepperoni</option>
+                        <option label="onion...kshs.100" value="100">Onion</option>
+                        <option label="Mushroom...kshs.100" value="100">Mushroom</option>
+                        <option label="Pepperoni...kshs.100" value="100" >Pepperoni</option>
                     </select>
                     <br>
                     <br>
 
-                    <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
-                    <input type="number" id="amount" placeholder="Number of pizzas"required>
+                    <button type="submit" class="btn btn-success order" id="submit-pizza">Order</button>
                 </form>
             </div>
             <div class="col-sm-7">
@@ -229,6 +228,7 @@
                     
         
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

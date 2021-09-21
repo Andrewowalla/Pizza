@@ -1,25 +1,23 @@
 // Business logic
-var price , crust_price, topping_price;
-let total = 0;
-
-function getPizza (name, size, crust, topping, total) {
-    this.name = name;
+function givePizza (flavor, size, crust, topping, total) {
+    this.flavor = flavor;
     this.size = size;
     this.crust= crust;
     this.topping =topping;
     this.total = total;
 }
-
 //User interface logic
-$(document).ready(function(){
-    $("button.order-button").click(function(event){
-    let pname = $(".flavor option:selected").val();
-    let psize = $("#size option:selected").val();
-    let pcrust = $("#crust option:selected").val();
-    let ptopping = [];
-    $.each($("input[name='topping']:checked"), function(){            
-        ptopping.push($(this).val());
-    });
-    console.log(ptopping.join(", "));
-    });
-});
+$("button.order").click(function(event){
+    let flavor = $(".flavor option:selected").val();
+    let size = $("#size option:selected").val();
+    let crust = $("#crust option:selected").val();
+    let topping = [];
+    console.log(size)
+    let order = (flavor, size, crust, topping, total) => {
+        return {flavor, size, crust, topping, total};
+
+    $.each($("input[name='toppings']:checked"), function(){            
+        topping.push($(this).val());
+   });
+}); 
+
