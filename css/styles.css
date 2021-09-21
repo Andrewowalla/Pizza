@@ -79,3 +79,9 @@ body {
     background-color: #9b9281;
     border:3px solid black;
 }
+#btn {
+    color:green;
+}
+#checkout {
+    color: green;
+}
