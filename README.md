@@ -12,7 +12,7 @@ HTML
 JAVASCRIPT
 CSS
 ## Support and contact details
-Please email me @andrewowalla
+Please email me @andrewowalla.gmail.com
 ### License
 *{MIT License}*
 Copyright (c) {2021} **{}**
