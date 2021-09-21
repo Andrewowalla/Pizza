@@ -85,3 +85,9 @@ body {
 #checkout {
     color: green;
 }
+.choice {
+    display: none;
+}
+.delivery {
+    display: none;
+}
