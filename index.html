@@ -133,7 +133,7 @@
             <div class="col-sm-5">
                 <form action="">
                     <label for="select">Select Flavor</label>
-                    <select class="custom-select custom-select-md mb-3 flavor" required>
+                    <select class="custom-select custom-select-md mb-3 flavor" id="flavor" required>
                         <option selected value="0">Select Flavor here</option>
                         <option label="Cheese Pizza" value="800" >Cheese Pizza</option>
                         <option label="Veggie Pizza" value="700">Veggie Pizza</option>
@@ -167,7 +167,7 @@
                     <br>
 
                     <label for="Topping" >Choose Topping</label>
-                    <select class="custom-select custom-select-md mb-3 Flavor" required>
+                    <select class="custom-select custom-select-md mb-3 topping" id="topping" required>
                         <option selected value="0">Choose Topping</option>
                         <option label="onion...kshs.100" value="100">Onion</option>
                         <option label="Mushroom...kshs.100" value="100">Mushroom</option>
@@ -175,8 +175,12 @@
                     </select>
                     <br>
                     <br>
+                    <label for="Quantity" >Quantity</label>
+                    
+                        <input class="form-control" type="number" name="pizza" id="quantity" placeholder="0">
+                    
 
-                    <button type="submit" class="btn btn-success order" id="submit-pizza">Order</button>
+                    <button type="submit" class="btn btn-success order" onClick="totalAmount();" id="submit-pizza">Order</button>
                 </form>
             </div>
             <div class="col-sm-7">
@@ -186,7 +190,7 @@
                     <table class="table table-sm  pizzatable">
                         <thead>
                             <tr>
-                                <th scope="col"></th>
+                                <th scope="col">flavor</th>
                                 <th scope="col">Size</th>
                                 <th scope="col">Crust</th>
                                 <th scope="col">Topping</th>
