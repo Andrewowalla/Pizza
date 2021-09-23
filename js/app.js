@@ -42,11 +42,11 @@ function getSize() {
       " amounting to ksh. " +
       totals +
       "" +
-      " Thanks for your order welcome again."
+      " Thanks for your order, hope you will enjoy it, welcome again."
     );
   
-    var location = prompt("If you want your pizza to be delivered to you please enter your location and if not cancel.");
+    var location = prompt("For delivery enter your location and if not cancel.");
     if (location !== "") {
-      alert("You order will be delivered shortly.Delivery fee is 150/= and incase you didnt want it delivered please come for your order.");
+      alert("You order will be delivered shortly.Delivery fee is 150/= and incase you didn't want it delivered please come pick your order.");
     }
   }
